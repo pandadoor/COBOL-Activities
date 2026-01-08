@@ -1,0 +1,21 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. 6LOOP.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+           01 NUM PIC 9(9).
+           01 FACT PIC 9(19) VALUE 1.
+           01 INT PIC 9(19) VALUE 1.
+           01 FACT_OUT PIC Z,ZZZ,ZZZ,ZZZ,ZZZ,ZZZ,ZZZ,ZZZ,ZZZ.
+
+       PROCEDURE DIVISION.
+           DISPLAY "INPUT A NUMBER: " WITH NO ADVANCING.
+           ACCEPT NUM.
+
+           PERFORM UNTIL INT >= NUM
+               ADD 1 TO INT
+               COMPUTE FACT = FACT * INT
+           END-PERFORM.
+
+           MOVE FACT TO FACT_OUT.
+           DISPLAY "RESULT: " FUNCTION TRIM(FACT_OUT).
+       STOP RUN.

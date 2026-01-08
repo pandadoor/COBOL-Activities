@@ -1,0 +1,4 @@
+# Ignore compiler intermediate and output files
+*.exe
+*.bin
+*.dat
