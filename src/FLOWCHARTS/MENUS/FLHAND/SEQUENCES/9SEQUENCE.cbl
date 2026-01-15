@@ -25,6 +25,7 @@
            01 PERIMETER PIC 9(7)V99.
 
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 9SEQUENCE-FILE
 
            DISPLAY "Enter width of rectangle: " WITH NO ADVANCING.

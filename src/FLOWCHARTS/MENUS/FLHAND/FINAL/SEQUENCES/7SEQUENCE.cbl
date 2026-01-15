@@ -26,6 +26,7 @@
            01 totalsale PIC 9(11)v99.
 
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 7SEQUENCE-FILE.
 
            DISPLAY "Input Salesman number: " WITH NO ADVANCING.

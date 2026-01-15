@@ -18,6 +18,7 @@
        01 COUNTER_OUT PIC ZZ VALUE 0.
 
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 2ITER-FILE
        
            PERFORM UNTIL COUNTER > 4

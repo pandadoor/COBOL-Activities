@@ -16,6 +16,7 @@
        WORKING-STORAGE SECTION.
            01 DAYNUM PIC 9(1).
        PROCEDURE DIVISION.
+               CALL "CLEAR-SCREEN"
                OPEN EXTEND 9SEL-FILE.
                
                DISPLAY "ENTER DAY: " WITH NO ADVANCING

@@ -1,12 +1,12 @@
        IDENTIFICATION DIVISION.
-           PROGRAM-ID. SEL-MENU.
+           PROGRAM-ID. SELECTION-MENU.
        DATA DIVISION.
            WORKING-STORAGE SECTION.
             01 SEL-CHOICE PIC x(2).
             
        PROCEDURE DIVISION.
-       CALL "SYSTEM" USING "clear".
-       SEL-MENU.
+       CALL "CLEAR-SCREEN".
+       SELECTION-MENU.
            DISPLAY "__________________________________________________".
            DISPLAY "           FILE HANDLING |  SELECTION MENU  ".
            DISPLAY SPACE.
@@ -29,39 +29,39 @@
 
            EVALUATE SEL-CHOICE
              WHEN 0 
-               CALL "SYSTEM" USING "clear"
+               CALL "CLEAR-SCREEN"
                EXIT PROGRAM  
              WHEN 1
                CALL "1SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN 2 
                CALL "2SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN 3 
                CALL "3SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN 4 
                CALL "4SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN 5 
                CALL "5SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN 6 
                CALL "6SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN 7 
                CALL "7SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN 8 
                CALL "8SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN 9 
                CALL "9SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN 10 
                CALL "10SELECTION"
-               PERFORM SEL-MENU
+               PERFORM SELECTION-MENU
              WHEN OTHER
-                PERFORM SEL-MENU
+                PERFORM SELECTION-MENU
            END-EVALUATE.
        EXIT PROGRAM.

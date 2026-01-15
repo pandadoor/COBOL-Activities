@@ -21,6 +21,7 @@
        01  I PIC 9(5) VALUE 2.
 
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN OUTPUT 9ITER-FILE.
            MOVE SPACES TO 9ITER-REC.
 
@@ -37,7 +38,8 @@
                        DISPLAY "NOT A PRIME NUMBER"
                        MOVE "NOT A PRIME NUMBER" TO NUM-OUT
                        WRITE 9ITER-REC
-                       STOP RUN
+                       CLOSE 9ITER-FILE
+                       EXIT PROGRAM
 
                    END-IF
                    ADD 1 TO I

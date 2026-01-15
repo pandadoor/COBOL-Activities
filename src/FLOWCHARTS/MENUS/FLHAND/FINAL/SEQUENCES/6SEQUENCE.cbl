@@ -25,6 +25,7 @@
            01  CUBE-OUT    PIC ZZZZZZZZZZZZ.99.
 
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 6SEQUENCE-FILE
 
            DISPLAY "Input number: " WITH NO ADVANCING

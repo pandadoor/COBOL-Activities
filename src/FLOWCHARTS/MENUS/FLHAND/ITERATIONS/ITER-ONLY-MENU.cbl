@@ -1,11 +1,11 @@
        IDENTIFICATION DIVISION.
-           PROGRAM-ID. ITER-MENU.
+           PROGRAM-ID. ITER-ONLY-MENU.
        DATA DIVISION.
            WORKING-STORAGE SECTION.
             01 ITER-CHOICE PIC 9(9).
             
        PROCEDURE DIVISION.
-       CALL "SYSTEM" USING "clear".
+       CALL "CLEAR-SCREEN".
        ITER-MENU.
            DISPLAY "__________________________________________________".
            DISPLAY "            FILE HANDLING | ITERATIONS MENU  ".
@@ -29,8 +29,8 @@
 
            EVALUATE ITER-CHOICE
              WHEN 0 
-               CALL "SYSTEM" USING "clear"
-               EXIT PROGRAM  
+               CALL "CLEAR-SCREEN"
+               STOP RUN  
              WHEN 1
                CALL "1LOOP"
                PERFORM ITER-MENU
@@ -64,4 +64,4 @@
              WHEN OTHER
                 PERFORM ITER-MENU
            END-EVALUATE.
-       EXIT PROGRAM.
+       STOP RUN.

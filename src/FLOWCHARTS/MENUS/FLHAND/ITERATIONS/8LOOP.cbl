@@ -29,6 +29,7 @@
 
     
        PROCEDURE DIVISION.
+                   CALL "CLEAR-SCREEN"
                    OPEN EXTEND 8ITER-FILE.
                    MOVE SPACES TO 8ITER-REC.
 

@@ -24,6 +24,7 @@
            01 quot PIC +$Z,Z(3),Z(3),Z(3).9(2).
 
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 4SEQUENCE-FILE.
            
            DISPLAY "Insert number 1: " WITH NO ADVANCING. 

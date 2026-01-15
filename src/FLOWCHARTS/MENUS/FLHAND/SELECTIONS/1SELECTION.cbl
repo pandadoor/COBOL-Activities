@@ -20,6 +20,7 @@
            01 FINALL PIC 9(5).
            01 AVERAGE_IN PIC 9(5)V99.
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 1SELECTION-FILE.
 
             DISPLAY "Input prelim: " WITH NO ADVANCING.

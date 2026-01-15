@@ -16,6 +16,7 @@
        WORKING-STORAGE SECTION.
            01 ALP PIC A(1).
        PROCEDURE DIVISION.
+               CALL "CLEAR-SCREEN"
                OPEN EXTEND 10SEL-FILE.
 
                DISPLAY "ENTER AN ALPHABET: " WITH NO ADVANCING

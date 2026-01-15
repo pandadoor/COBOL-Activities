@@ -1,11 +1,11 @@
        IDENTIFICATION DIVISION.
-           PROGRAM-ID. SEQ-MENU.
+           PROGRAM-ID. SEQ-ONLY-MENU.
        DATA DIVISION.
            WORKING-STORAGE SECTION.
             01 CHOICE PIC x(2).
             
        PROCEDURE DIVISION.
-       CALL "SYSTEM" USING "clear".
+       CALL "CLEAR-SCREEN".
        SEQ-MENU.
            DISPLAY "__________________________________________________".
            DISPLAY "           FILE HANDLING | SEQUENCES MENU  ".
@@ -29,8 +29,8 @@
 
            EVALUATE CHOICE
              WHEN 0 
-               CALL "SYSTEM" USING "clear"
-               EXIT PROGRAM
+               CALL "CLEAR-SCREEN"
+               STOP RUN
              WHEN 1
                CALL "1SEQUENCE"
                PERFORM SEQ-MENU
@@ -47,7 +47,7 @@
                CALL "5SEQUENCE"
                PERFORM SEQ-MENU
              WHEN 6 
-               CALL "61SEQUENCE"
+               CALL "6SEQUENCE"
                PERFORM SEQ-MENU
              WHEN 7 
                CALL "7SEQUENCE"
@@ -64,4 +64,4 @@
              WHEN OTHER
                 PERFORM SEQ-MENU
            END-EVALUATE.
-       EXIT PROGRAM.
+       STOP RUN.

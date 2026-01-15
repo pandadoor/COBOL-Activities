@@ -23,6 +23,7 @@
        01 FACT     PIC     9(12).
                
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 6ITER-FILE.
            MOVE SPACES TO 6ITER-REC.
 

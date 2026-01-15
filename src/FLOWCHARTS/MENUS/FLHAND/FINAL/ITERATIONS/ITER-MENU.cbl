@@ -1,12 +1,12 @@
        IDENTIFICATION DIVISION.
-           PROGRAM-ID. ITER-MENU.
+           PROGRAM-ID. ITERATION-MENU.
        DATA DIVISION.
            WORKING-STORAGE SECTION.
             01 ITER-CHOICE PIC 9(9).
             
        PROCEDURE DIVISION.
-       CALL "SYSTEM" USING "clear".
-       ITER-MENU.
+       CALL "CLEAR-SCREEN".
+       ITERATION-MENU.
            DISPLAY "__________________________________________________".
            DISPLAY "            FILE HANDLING | ITERATIONS MENU  ".
            DISPLAY SPACE.
@@ -29,39 +29,39 @@
 
            EVALUATE ITER-CHOICE
              WHEN 0 
-               CALL "SYSTEM" USING "clear"
+               CALL "CLEAR-SCREEN"
                EXIT PROGRAM  
              WHEN 1
                CALL "1LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN 2 
                CALL "2LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN 3 
                CALL "3LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN 4 
                CALL "4LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN 5 
                CALL "5LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN 6 
                CALL "6LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN 7 
                CALL "7LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN 8 
                CALL "8LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN 9 
                CALL "9LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN 10 
                CALL "10LOOP"
-               PERFORM ITER-MENU
+               PERFORM ITERATION-MENU
              WHEN OTHER
-                PERFORM ITER-MENU
+                PERFORM ITERATION-MENU
            END-EVALUATE.
        EXIT PROGRAM.

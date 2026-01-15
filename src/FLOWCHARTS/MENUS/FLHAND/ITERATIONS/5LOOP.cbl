@@ -21,6 +21,7 @@
            05 N_OUT PIC Z(19).
            
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 5ITER-FILE.
            MOVE SPACES TO 5ITER-REC.
 

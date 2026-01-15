@@ -1,11 +1,11 @@
        IDENTIFICATION DIVISION.
-           PROGRAM-ID. SEL-MENU.
+           PROGRAM-ID. SEL-ONLY-MENU.
        DATA DIVISION.
            WORKING-STORAGE SECTION.
             01 SEL-CHOICE PIC x(2).
             
        PROCEDURE DIVISION.
-       CALL "SYSTEM" USING "clear".
+       CALL "CLEAR-SCREEN".
        SEL-MENU.
            DISPLAY "__________________________________________________".
            DISPLAY "           FILE HANDLING |  SELECTION MENU  ".
@@ -29,7 +29,7 @@
 
            EVALUATE SEL-CHOICE
              WHEN 0 
-               CALL "SYSTEM" USING "clear"
+               CALL "CLEAR-SCREEN"
                STOP RUN  
              WHEN 1
                CALL "1SELECTION"

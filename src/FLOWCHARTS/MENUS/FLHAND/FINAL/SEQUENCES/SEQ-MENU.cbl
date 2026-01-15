@@ -1,12 +1,12 @@
        IDENTIFICATION DIVISION.
-           PROGRAM-ID. SEQ-MENU.
+           PROGRAM-ID. SEQUENCE-MENU.
        DATA DIVISION.
            WORKING-STORAGE SECTION.
             01 CHOICE PIC x(2).
             
        PROCEDURE DIVISION.
-       CALL "SYSTEM" USING "clear".
-       SEQ-MENU.
+       CALL "CLEAR-SCREEN".
+       SEQUENCE-MENU.
            DISPLAY "__________________________________________________".
            DISPLAY "           FILE HANDLING | SEQUENCES MENU  ".
            DISPLAY SPACE.
@@ -29,39 +29,39 @@
 
            EVALUATE CHOICE
              WHEN 0 
-               CALL "SYSTEM" USING "clear"
+               CALL "CLEAR-SCREEN"
                EXIT PROGRAM
              WHEN 1
                CALL "1SEQUENCE"
-               PERFORM SEQ-MENU
+               PERFORM SEQUENCE-MENU
              WHEN 2 
                CALL "2SEQUENCE"
-               PERFORM SEQ-MENU
+               PERFORM SEQUENCE-MENU
              WHEN 3 
                CALL "3SEQUENCE"
-               PERFORM SEQ-MENU
+               PERFORM SEQUENCE-MENU
              WHEN 4 
                CALL "4SEQUENCE"
-               PERFORM SEQ-MENU
+               PERFORM SEQUENCE-MENU
              WHEN 5 
                CALL "5SEQUENCE"
-               PERFORM SEQ-MENU
+               PERFORM SEQUENCE-MENU
              WHEN 6 
-               CALL "61SEQUENCE"
-               PERFORM SEQ-MENU
+               CALL "6SEQUENCE"
+               PERFORM SEQUENCE-MENU
              WHEN 7 
                CALL "7SEQUENCE"
-               PERFORM SEQ-MENU
+               PERFORM SEQUENCE-MENU
              WHEN 8 
                CALL "8SEQUENCE"
-               PERFORM SEQ-MENU
+               PERFORM SEQUENCE-MENU
              WHEN 9 
                CALL "9SEQUENCE"
-               PERFORM SEQ-MENU
+               PERFORM SEQUENCE-MENU
              WHEN 10 
                CALL "10SEQUENCE"
-               PERFORM SEQ-MENU
+               PERFORM SEQUENCE-MENU
              WHEN OTHER
-                PERFORM SEQ-MENU
+                PERFORM SEQUENCE-MENU
            END-EVALUATE.
        EXIT PROGRAM.

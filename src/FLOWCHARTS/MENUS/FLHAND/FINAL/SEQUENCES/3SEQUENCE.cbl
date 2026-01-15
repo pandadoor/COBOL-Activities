@@ -21,6 +21,7 @@
        01  FAREN_OUT PIC ZZZZZZZZ9.99.
 
        PROCEDURE DIVISION.
+               CALL "CLEAR-SCREEN"
                OPEN EXTEND 3SEQUENCE-FILE
                
                DISPLAY "INPUT CELSIUS: " WITH NO ADVANCING.

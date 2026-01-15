@@ -21,6 +21,7 @@
            01 average PIC 9(5)v99.
            01 average_out PIC ZZZ.99.
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 5SEQUENCE-FILE.
 
            DISPLAY "Input prelim: " WITH NO ADVANCING.

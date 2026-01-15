@@ -21,6 +21,7 @@
            01 RMD-STR    PIC X(1).
            01 TEMP-BIN   PIC X(32).
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 10ITER-FILE.
            MOVE SPACES TO 10ITER-REC.
 

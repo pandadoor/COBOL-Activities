@@ -21,6 +21,7 @@
        01  c   PIC X(4).
            
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN".
            OPEN EXTEND 2SEQUENCE-FILE
            
            MOVE a TO 2SEQUENCE-REC

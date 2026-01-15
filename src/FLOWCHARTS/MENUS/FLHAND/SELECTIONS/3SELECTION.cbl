@@ -16,6 +16,7 @@
        WORKING-STORAGE SECTION.
            01 NUM PIC 9(19).
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN OUTPUT 3SEL-FILE.
 
            DISPLAY "Input number: " WITH NO ADVANCING.

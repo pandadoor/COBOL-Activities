@@ -18,6 +18,7 @@
        01  NUM PIC S9(11).
        
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 2SEL-FILE.
 
            DISPLAY "Input number: " WITH NO ADVANCING.

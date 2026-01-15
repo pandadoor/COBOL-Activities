@@ -17,6 +17,7 @@
            01 NUM1 PIC S9(9).
            01 NUM2 PIC S9(9).
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN OUTPUT 4SEL-FILE.
 
            DISPLAY "Input number 1: " WITH NO ADVANCING.

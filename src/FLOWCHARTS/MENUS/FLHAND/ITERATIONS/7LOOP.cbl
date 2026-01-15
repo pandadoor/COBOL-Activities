@@ -23,6 +23,7 @@
            1 SUMM PIC 9(19) VALUE 0.
            
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 7ITER-FILE.
            MOVE SPACES TO 7ITER-REC.
 

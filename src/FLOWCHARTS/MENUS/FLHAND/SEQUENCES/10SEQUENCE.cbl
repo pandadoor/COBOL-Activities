@@ -26,6 +26,7 @@
            01 perimeter PIC s9(11)V99.
 
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 10SEQUENCE-FILE.
 
            DISPLAY "Input base: " WITH NO ADVANCING.

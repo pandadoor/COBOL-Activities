@@ -20,6 +20,7 @@
            05 N PIC 9(11).
        WORKING-STORAGE SECTION.
        PROCEDURE DIVISION.
+           CALL "CLEAR-SCREEN"
            OPEN EXTEND 4ITER-FILE.
            MOVE SPACES TO 4ITER-REC.
 

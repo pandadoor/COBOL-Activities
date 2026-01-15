@@ -7,7 +7,7 @@
        PROCEDURE DIVISION.
        
        MAIN-MENU.
-           CALL "SYSTEM" USING "clear".
+           CALL "CLEAR-SCREEN".
            DISPLAY "__________________________________________________".
            DISPLAY "              FILE HANDLING | MAIN MENU  ".
            DISPLAY SPACE.
@@ -24,16 +24,16 @@
              WHEN 0 
                STOP RUN  
              WHEN 1
-               CALL "SYSTEM" USING "clear"
-               CALL "SEQ-MENU"
+               CALL "CLEAR-SCREEN"
+               CALL "SEQUENCE-MENU"
                PERFORM MAIN-MENU
              WHEN 2 
-               CALL "SYSTEM" USING "clear"
-               CALL "SEL-MENU"
+               CALL "CLEAR-SCREEN"
+               CALL "SELECTION-MENU"
                PERFORM MAIN-MENU
              WHEN 3 
-               CALL "SYSTEM" USING "clear"
-               CALL "ITER-MENU"
+               CALL "CLEAR-SCREEN"
+               CALL "ITERATION-MENU"
                PERFORM MAIN-MENU
              WHEN OTHER
                 PERFORM MAIN-MENU
