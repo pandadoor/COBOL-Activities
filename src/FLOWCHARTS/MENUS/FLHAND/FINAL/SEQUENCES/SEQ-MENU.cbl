@@ -5,8 +5,9 @@
             01 CHOICE PIC x(2).
             
        PROCEDURE DIVISION.
-       CALL "CLEAR-SCREEN".
+           CALL "CLEAR-SCREEN".
        SEQUENCE-MENU.
+           
            DISPLAY "__________________________________________________".
            DISPLAY "           FILE HANDLING | SEQUENCES MENU  ".
            DISPLAY SPACE.
@@ -62,6 +63,7 @@
                CALL "10SEQUENCE"
                PERFORM SEQUENCE-MENU
              WHEN OTHER
+               CALL "CLEAR-SCREEN"
                 PERFORM SEQUENCE-MENU
            END-EVALUATE.
        EXIT PROGRAM.

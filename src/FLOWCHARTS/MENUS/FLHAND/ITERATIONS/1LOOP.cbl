@@ -16,6 +16,7 @@
        WORKING-STORAGE SECTION.
        01 COUNTER PIC 9(5) VALUE 0.
        PROCEDURE DIVISION.
+           MOVE 0 TO COUNTER.
            CALL "CLEAR-SCREEN"
            OPEN EXTEND 1ITER-FILE.
            

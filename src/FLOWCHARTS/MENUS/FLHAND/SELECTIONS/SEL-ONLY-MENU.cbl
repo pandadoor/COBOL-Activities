@@ -62,6 +62,7 @@
                CALL "10SELECTION"
                PERFORM SEL-MENU
              WHEN OTHER
+               CALL "CLEAR-SCREEN"
                 PERFORM SEL-MENU
            END-EVALUATE.
        STOP RUN.
